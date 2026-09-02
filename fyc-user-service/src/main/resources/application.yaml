@@ -1,7 +1,5 @@
 spring:
   application:
     name: fyc-user-service
-
   config:
     import: configserver:http://localhost:8888
-
