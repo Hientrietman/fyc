@@ -1,0 +1,16 @@
+networks:
+  microservices-net:
+    driver: bridge
+
+services:
+  postgres-db:
+    container_name: postgres-db
+    image: postgres:17
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+#    networks:
+#      - microservices-net
